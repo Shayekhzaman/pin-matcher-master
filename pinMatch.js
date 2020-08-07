@@ -27,6 +27,8 @@ document.getElementById("clearBtn").addEventListener("click",function(){
 // submit Button Handler
 document.getElementById("submitBtn").addEventListener("click",function(){ 
     if(random==newVal){
+        const pinNotMatch=document.getElementById("pin-did-not-match");
+        pinNotMatch.style.display="none";
        const pinMatch= document.getElementById("pinMatch");         
          pinMatch.style.display="block";
     }
@@ -43,6 +45,8 @@ document.getElementById("submitBtn").addEventListener("click",function(){
             }
         const pinNotMatch=document.getElementById("pin-did-not-match");
         pinNotMatch.style.display="block";
+        const pinMatch= document.getElementById("pinMatch");         
+        pinMatch.style.display="none";
 
     }
 
